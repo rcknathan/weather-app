@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import RequestAPI from '../API/RequestAPI';
 
+import '../Styles/Weather.css';
+
 const WeatherComponent = ({ city }) => {
   const [weatherData, setWeatherData] = useState(null);
 
@@ -19,13 +21,13 @@ const WeatherComponent = ({ city }) => {
   }, [city]);
 
   return (
-    <div>
+    <div className='div-weather'>
       {weatherData ? (
-        <div>
-          <p>weather information from {city}</p>
-          <p>temperature: {weatherData.temperature}</p>
-          <p>wind: {weatherData.wind}</p>
-          <p>description: {weatherData.description}</p>
+        <div className='div-data'>
+          <p className='temperature'>{weatherData.temperature}</p>
+          <p className='details'>{city}</p>
+          <p className='details'>{weatherData.wind}</p>
+          <p className='details'>{weatherData.description}</p>
         </div>
       ) : (
         <p>loading data...</p>
