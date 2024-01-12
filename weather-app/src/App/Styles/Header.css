@@ -1,0 +1,17 @@
+.header-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: linear-gradient(to right, #87CEEB, #1E90FF);
+    background-position: 50% 50%;
+}
+
+.header-page h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 38px;
+    color: #f8f8ff;
+}

@@ -1,9 +1,11 @@
-import WeatherComponent from "./App/Components/WeatherComponent";
+import HeaderComponent from './App/Components/HeaderComponent';
+
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <WeatherComponent/>
+      <HeaderComponent/>
     </div>
   );
 }
