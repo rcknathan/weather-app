@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import RequestAPI from '../API/RequestAPI';
 
-const WeatherComponent = () => {
+const WeatherComponent = ({ city }) => {
   const [weatherData, setWeatherData] = useState(null);
-  const city = 'Curitiba';
 
   useEffect(() => {
     const fetchData = async () => {
