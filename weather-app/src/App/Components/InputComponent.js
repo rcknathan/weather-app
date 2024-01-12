@@ -16,7 +16,9 @@ const InputComponent = ({ onCityChange }) => {
     return (
         <div className='div-input'>
             <input className='input-page' type="text" placeholder="Enter A City..." value={inputValue} onChange={handleInputChange}/>
-            <button className='button-search' onClick={handleButtonClick}>Search</button>
+            <button className='button-search' onClick={handleButtonClick}>
+                <span className='button-text'>🔍︎</span>
+            </button>
         </div>
     );
 };

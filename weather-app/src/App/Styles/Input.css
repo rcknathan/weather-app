@@ -10,6 +10,7 @@
     width: 200px;
     height: 30px;
     padding: 10px;
+    margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 30px;
     outline: none;
@@ -20,4 +21,32 @@
 .input-page:focus {
     border-color: #007BFF;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.button-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(to right, #1E90FF, #215c95);
+    border: 1px solid #000;
+    transition: transform 0.3s;
+}
+
+.button-search:hover {
+    transform: scale(1.1);
+}
+
+.button-search:active {
+    transform: scale(1);
+}
+
+.button-text {
+    margin-bottom: 3px;
+    color: #f8f8ff;
+    font-size: 25px;
 }
