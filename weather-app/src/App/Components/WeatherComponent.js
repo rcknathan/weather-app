@@ -11,7 +11,7 @@ const WeatherComponent = () => {
         const data = await RequestAPI(city);
         setWeatherData(data);
       } catch (error) {
-        console.error('Error getting weather data:', error);
+        console.error('Error setting weather data:', error);
         throw error;
       }
     };
