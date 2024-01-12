@@ -29,7 +29,7 @@ const WeatherComponent = () => {
           <p>description: {weatherData.description}</p>
         </div>
       ) : (
-        <p>Carregando dados do clima...</p>
+        <p>loading data...</p>
       )}
     </div>
   );
