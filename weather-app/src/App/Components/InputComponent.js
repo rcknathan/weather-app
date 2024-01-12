@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import '../Styles/Input.css';
+
 const InputComponent = ({ onCityChange }) => {
     const [inputValue, setInputValue] = useState('');
 
@@ -12,9 +14,9 @@ const InputComponent = ({ onCityChange }) => {
     };
 
     return (
-        <div>
-            <input type="text" placeholder="Enter A City..." value={inputValue} onChange={handleInputChange}/>
-            <button onClick={handleButtonClick}>Enviar</button>
+        <div className='div-input'>
+            <input className='input-page' type="text" placeholder="Enter A City..." value={inputValue} onChange={handleInputChange}/>
+            <button className='button-search' onClick={handleButtonClick}>Search</button>
         </div>
     );
 };
