@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 95px;
+    height: 90px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     background: linear-gradient(to right, #87CEEB, #1E90FF);
