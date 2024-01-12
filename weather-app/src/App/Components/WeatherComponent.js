@@ -30,7 +30,7 @@ const WeatherComponent = ({ city }) => {
           <p className='details'>{weatherData.description}</p>
         </div>
       ) : (
-        <p>loading data...</p>
+        <p className='loading'>Waiting City...</p>
       )}
     </div>
   );

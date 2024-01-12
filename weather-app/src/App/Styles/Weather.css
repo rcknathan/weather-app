@@ -7,18 +7,34 @@
 
 .div-data {
     position: relative;
-    right: 10px;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .temperature {
     font-size: 80px;
     position: relative;
-    bottom: 40px;
+    bottom: 10px;
 }
 
 .details {
     font-size: 20px;
     position: relative;
     top: 50px;
-    left: 10px;
+}
+
+.loading {
+    position: relative;
+    top: 200px;
+    color: #808080;
 }
