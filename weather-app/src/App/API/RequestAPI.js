@@ -5,7 +5,6 @@ const RequestAPI = async (city) => {
       return data;
     } catch (error) {
       console.error('Error getting weather data:', error);
-      throw error;
     }
   };
   
