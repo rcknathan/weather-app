@@ -22,7 +22,11 @@
 }
 
 .temperature {
-    font-size: 80px;
+    font-size: 85px;
+    font-weight: 50;
+    color: #000000;
+    cursor: default;
+    user-select: none;
     position: relative;
     bottom: 10px;
     right: 7px;
@@ -30,6 +34,10 @@
 
 .details {
     font-size: 20px;
+    font-weight: 50;
+    color: #000000;
+    cursor: default;
+    user-select: none;
     position: relative;
     top: 50px;
 }

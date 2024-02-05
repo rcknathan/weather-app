@@ -5,12 +5,14 @@ import '../Styles/Weather.css';
 
 const WeatherComponent = ({ city }) => {
   const [weatherData, setWeatherData] = useState(null);
+  const [keyToRemount, setKeyToRemount] = useState(0);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const data = await RequestAPI(city);
         setWeatherData(data);
+        setKeyToRemount(prevKey => prevKey + 1);
       } catch (error) {
         console.error('Error setting weather data:', error);
         throw error;
@@ -21,7 +23,7 @@ const WeatherComponent = ({ city }) => {
   }, [city]);
 
   return (
-    <div className='div-weather'>
+    <div key={keyToRemount} className={`div-weather`}>
       {weatherData && (
         <div className='div-data'>
           <p className='temperature'>{weatherData.temperature}</p>
@@ -29,7 +31,7 @@ const WeatherComponent = ({ city }) => {
           <p className='details'>{weatherData.wind}</p>
           <p className='details'>{weatherData.description}</p>
         </div>
-      )};
+      )}
     </div>
   );
 };
