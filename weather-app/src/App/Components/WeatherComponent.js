@@ -22,16 +22,14 @@ const WeatherComponent = ({ city }) => {
 
   return (
     <div className='div-weather'>
-      {weatherData ? (
+      {weatherData && (
         <div className='div-data'>
           <p className='temperature'>{weatherData.temperature}</p>
           <p className='details'>{city}</p>
           <p className='details'>{weatherData.wind}</p>
           <p className='details'>{weatherData.description}</p>
         </div>
-      ) : (
-        <p className='loading'>Waiting City...</p>
-      )}
+      )};
     </div>
   );
 };
