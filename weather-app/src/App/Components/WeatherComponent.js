@@ -9,13 +9,17 @@ const WeatherComponent = ({ city }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        const data = await RequestAPI(city);
-        setWeatherData(data);
-        setKeyToRemount(prevKey => prevKey + 1);
-      } catch (error) {
-        console.error('Error setting weather data:', error);
-        throw error;
+      if (city.trim() !== '') {
+        try {
+          const data = await RequestAPI(city);
+          setWeatherData(data);
+          setKeyToRemount(prevKey => prevKey + 1);
+        } catch (error) {
+          console.error('Error setting weather data:', error);
+          throw error;
+        }
+      } else {
+        setWeatherData(null);
       }
     };
 
