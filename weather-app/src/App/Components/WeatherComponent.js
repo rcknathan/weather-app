@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import RequestAPI from '../API/RequestAPI';
-import ErrorComponent from './ErrorComponent';
 
 import '../Styles/Weather.css';
 
@@ -17,7 +16,6 @@ const WeatherComponent = ({ city }) => {
           setKeyToRemount(prevKey => prevKey + 1);
         } catch (error) {
           console.error('Error setting weather data:', error);
-          return <ErrorComponent/>
         }
       } else {
         setWeatherData(null);
