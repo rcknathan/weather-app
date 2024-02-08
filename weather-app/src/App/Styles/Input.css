@@ -17,6 +17,7 @@
     font-size: 16px;
     transition: border-color 0.3s ease;
     user-select: none;
+    background-color: #f6f6f6;
 }
 
 .input-page:focus {

@@ -1,5 +1,4 @@
 .div-weather {
-    top: 10px;
     align-items: center;
     position: relative;
     text-align: center;
@@ -9,21 +8,24 @@
 
 .div-data {
     position: relative;
-    animation: fadeIn 1s ease-out;
-    top: 45px;
+    animation: fadeIn 2s ease-out;
+    top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #eeeeee;
+    background-color: #f6f6f6;
     width: 300px;
-    height: 490px;
+    height: 410px;
     border-radius: 50px;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.5s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .div-data:hover {
     transform: scale(1.02);
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 @keyframes fadeIn {
@@ -38,28 +40,22 @@
 }
 
 .temperature {
-    font-size: 70px;
+    font-size: 75px;
     font-weight: 50;
     color: #000000;
     cursor: default;
     user-select: none;
     position: relative;
-    bottom: 30px;
+    bottom: 50px;
     right: 7px;
 }
 
 .details {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 50;
     color: #000000;
     cursor: default;
     user-select: none;
     position: relative;
-    top: 50px;
-}
-
-.loading {
-    position: relative;
-    top: 200px;
-    color: #808080;
+    bottom: 50px;
 }
