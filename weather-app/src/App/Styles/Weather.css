@@ -9,7 +9,7 @@
 .div-data {
     position: relative;
     animation: fadeIn 2s ease-out;
-    top: 60px;
+    top: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +19,7 @@
     border-radius: 50px;
     cursor: pointer;
     transition: transform 0.5s;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
 .div-data:hover {
