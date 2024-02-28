@@ -11,7 +11,7 @@
 
 <p align="center">
   <h3>Skills Acquired With This Project:</h3>
-  <a href="https://skillicons.dev">
+  <a href="https://github.com/rcknathan">
     <img src="https://skillicons.dev/icons?i=react,html,css,js" />
   </a>
 </p>
