@@ -9,7 +9,7 @@
 .div-data {
     position: relative;
     animation: fadeIn 2s ease-out;
-    top: 90px;
+    top: 65px;
     display: flex;
     flex-direction: column;
     align-items: center;
