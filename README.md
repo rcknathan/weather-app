@@ -8,3 +8,9 @@
 <p>This project was done solely with the intention of studying and improving my knowledge in React (which includes HTML, CSS and JavaScript).</p>
 <p>As it is a free API and a study application, instabilities or small unexpected errors may occur during its execution.</p>
 <p>I appreciate any kind of feedback, suggestions and opinions.</p>
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,html,css,js" />
+  </a>
+</p>
