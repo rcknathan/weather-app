@@ -47,9 +47,6 @@
     transform: scale(1);
 }
 
-.button-text {
-    margin-bottom: 3px;
-    color: #f8f8ff;
-    font-size: 25px;
+.button-icon {
     user-select: none;
 }
