@@ -1,6 +1,7 @@
+//Makes the API data request
 const RequestAPI = async (city) => {
     try {
-      const response = await fetch(`https://goweather.herokuapp.com/weather/${city}`);
+      const response = await fetch(`https://goweather.herokuapp.com/weather/${city}`); //Note that the city to be inserted in the API link is a variable to be passed
       const data = await response.json();
       return data;
     } catch (error) {

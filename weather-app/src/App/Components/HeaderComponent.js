@@ -1,7 +1,10 @@
+//Import
 import React from 'react';
 
+//Import Style
 import '../Styles/Header.css';
 
+//Create a header for the page
 const HeaderComponent = () => {
     return(
         <header className='header-page'>

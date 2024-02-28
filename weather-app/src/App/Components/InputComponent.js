@@ -1,8 +1,11 @@
+//Imports
 import React, { useState } from 'react';
-
-import '../Styles/Input.css';
 import searchIcon from '../Icons/search.png';
 
+//Import Style
+import '../Styles/Input.css';
+
+//Determines the actions of the search button click and inbox change events
 const InputComponent = ({ onCityChange }) => {
     const [inputValue, setInputValue] = useState('');
 
@@ -14,6 +17,7 @@ const InputComponent = ({ onCityChange }) => {
         onCityChange(inputValue);
     };
 
+    //Create visual elements
     return (
         <div className='div-input'>
             <input className='input-page' type="text" placeholder="Enter A City..." value={inputValue} onChange={handleInputChange}/>
