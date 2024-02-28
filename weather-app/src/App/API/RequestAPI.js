@@ -5,7 +5,7 @@ const RequestAPI = async (city) => {
       return data;
     } catch (error) {
       console.error('Error getting weather data:', error);
-      alert('Error loading weather data: Unable to access API, you may face this problem sometimes., try again later.');
+      alert('Error loading weather data: Unable to access API, you may face this problem sometimes. Please, reload the page and try again.');
     }
   };
   
