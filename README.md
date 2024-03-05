@@ -10,6 +10,9 @@
 <p>I appreciate any kind of feedback, suggestions and opinions.</p>
 <p>The project may still undergo changes or improvements.</p>
 
+<h2>Deploy</h2>
+<p>You can check the application working <a href="https://weather-app-rcknathan.netlify.app/">here</a>.</p>
+
 <p align="center">
   <h2>Skills Acquired With This Project:</h2>
   <a href="https://github.com/rcknathan">
