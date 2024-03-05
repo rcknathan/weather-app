@@ -1,5 +1,5 @@
 //Imports
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import HeaderComponent from './App/Components/HeaderComponent';
 import InputComponent from './App/Components/InputComponent';
 import WeatherComponent from './App/Components/WeatherComponent';
@@ -11,6 +11,9 @@ import './App/Styles/TapOff.css';
 //The function is available to update this city when necessary
 function App() {
   const [city, setCity] = useState('');
+  useEffect(() => {
+    document.title = "Weather App";
+  }, []);
 
   const handleCityChange = (newCity) => {
     setCity(newCity);
